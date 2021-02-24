@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+header {
+  font-family: 'Poppins';
+}
+main {
+  padding: 20px 0;
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    margin: 15px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+main h1 {
+  margin: 0 10px;
+  border-bottom: 1px solid gray;
+}
+
+main h2 {
+  font-family: "Poppins";
+  margin: 12px 10px;
+  border-bottom: 1px solid lightgray;
+  background-color: darkmagenta;
+  color: aliceblue;
+  text-align: center;
+}
+
+main img {
+  width: 100%;
+}
+
+/* Navigation Bar */
+
+.nav-home {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.name-title {
+    font-size: 35px;
+}
+
+/* Intro Section */
+
+.intro-text {
+  font-size: 25px;
+}
+
+/* Contact Form - Image */
+
+.contact-image {
+  border: 1px solid #ababab;
+  border-radius: 8px;
+}
+
+/* Groups & Items  (Mobile First) */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+
+  .name-title {
+      font-size: 50px;
+  }
+}
+
+/* ---  Contact Form Design --- */
+
+form {
+  padding-right: 6px;
+  /* Fixed small sizing issue on the right */
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
