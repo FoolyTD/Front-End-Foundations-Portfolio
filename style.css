@@ -1,127 +1,241 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-header {
-  font-family: 'Poppins';
+/*All body text poppins*/
+body{
+	font-family: 'Poppins';
+  background-color:rgb(248, 211, 222);
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+a:hover{
+  color:#FFFFFF;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+nav ol {
+  display: flex;
+  justify-content: space-evenly;
 }
 main {
-  padding: 20px 0;
-  font-family: "Poppins";
   display: flex;
   flex-direction: column;
 }
-
-nav {
-    display: flex;
-}
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-}
-nav ul li {
-    list-style-type: none;
-    display: flex;
-    justify-content: end;
-    margin: 15px;
-}
-
-nav a {
-    text-decoration: none;
-}
-
-section {
-  margin-bottom: 100px;
-}
-
-main h1 {
-  margin: 0 10px;
-  border-bottom: 1px solid gray;
-}
-
-main h2 {
-  font-family: "Poppins";
-  margin: 12px 10px;
-  border-bottom: 1px solid lightgray;
-  background-color: darkmagenta;
-  color: aliceblue;
+section h2{
   text-align: center;
 }
-
-main img {
+img {
   width: 100%;
 }
-
-/* Navigation Bar */
-
-.nav-home {
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-}
-
-.name-title {
-    font-size: 35px;
-}
-
-/* Intro Section */
-
-.intro-text {
-  font-size: 25px;
-}
-
-/* Contact Form - Image */
-
-.contact-image {
-  border: 1px solid #ababab;
-  border-radius: 8px;
-}
-
-/* Groups & Items  (Mobile First) */
-
 .group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
 }
-
+.inner-group {
+  display: flex;
+  flex-direction: row;
+}
 .item {
   flex: 1;
-  margin: 10px;
 }
-
 .item-double {
   flex: 2;
-  margin: 10px;
+}
+.main-text {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.project-group img {
+  height: 300px;
+}
+.nav-links {
+  text-align: center;
+}
+.about-img {
+  padding: 15% 0 15% 0;
+}
+.about-text {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 10px 5px 5px 5px;
+}
+.project-group {
+  display: flex;
+  flex-direction:row;
+}
+.project-item {
+  flex: 1;
+}
+.project-link {
+  padding-left: 50px;
+}
+.form {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 0 0 10px;
 }
 
-/* ---  (Desktop) Groups & Items --- */
-
-@media all and (min-width: 800px) {
-  section {
-    padding: 0 10%;
+.form-text-area {
+  justify-content:right;
+  padding: 10px 10px 10px 75px;
+}
+ul li {
+  list-style-type:none;
+  text-align:center;
+  padding-right: 10%;
+  font-size: 1rem;
+}
+ul li a {
+  text-decoration: none;
+}
+@media all and (min-width: 600px) {
+  main {
+    display: flex;
   }
-  .group {
+  .introduction .item {
+    padding-left: 50px;
+  }
+  .about .about-text {
+    padding-left: 50px;
+  }
+  .project-item {
+    flex: 1;
+    
+  }
+  img {
+    max-width: 750px;
+    max-height: 900px;
+  }
+  header section {
     flex-direction: row;
   }
-
-  .name-title {
-      font-size: 50px;
+  header section h1 {
+    flex: 2;
+  }
+  nav ol {
+    justify-content: center;
+  }
+  .nav-links a{
+    padding: 0 45px;
+  }
+  main section .group {
+    display: flex;
+    flex-direction: row;
+  }
+  .introduction .inner-group {
+    flex-direction: column;
+  }
+  ul li {
+    font-size: 1.3rem;
+  }
+  .project-link {
+    padding-left: 100px;
   }
 }
 
-/* ---  Contact Form Design --- */
-
-form {
-  padding-right: 6px;
-  /* Fixed small sizing issue on the right */
+@media all and (min-width: 800px) {
+  .nav-links {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .about-text {
+    font-size: 1.2rem;
+  }
+  .main-text {
+    font-size: 2rem;
+  }
+  main .introduction {
+    padding: 0 100px 0 100px;
+    
+  }
+  main .about {
+    padding: 0 10px 0 100px;
+  }
+  .project-item img {
+max-width: 600px;
+max-height: 300px;
+  }
+  .project-link {
+    padding-left: 200px;
+  }
+  .contact {
+    padding: 5% 10% 0 10%;
+  }
 }
 
-form input,
-form textarea {
-  width: 100%;
-  margin-bottom: 20px;
+@media all and (min-width: 1000px) {
+  h1 {
+    font-size: 7rem;
+  }
+  .about-text {
+    font-size: 1.5rem;
+  }
+  main .introduction {
+    padding: 0 200px 0 200px;
+  }
+  main .about {
+    padding: 0 50px 0 200px;
+  }
+  .project-item img {
+    padding-left: 10%;
+
+  }
+  .contact {
+    padding: 10% 20% 0 20%;
+  }
+  ul li {
+    font-size: 1.7rem;
+  }
+  .project-link {
+    padding-left: 250px;
+  }
 }
 
-form textarea {
-  height: 160px;
+@media all and (min-width: 1500px) {
+  .nav-links {
+    font-size: 2rem;
+  }
+  .about-text {
+    font-size: 2rem;
+    padding: 200px 100px 100px 100px;
+  }
+  .project-item img {
+    padding-left: 20%;
+  }
+  .project-group {
+    padding-bottom: 50px;
+  }
+  .project-item {
+    padding-left: 50px;
+  }
+  .contact {
+    padding-left: 30%;
+  }
+  .project-link {
+    padding-left: 350px;
+  }
+  .contact h2 {
+    padding-right: 400px;
+  }
+  .contact h3 {
+    padding-right: 400px;
+  }
+  .contact ul {
+    padding-right: 400px;
+  }
 }
