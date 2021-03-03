@@ -23,7 +23,7 @@ h3 {
   font-size: 1.4rem;
   text-align: center;
 }
-nav ol {
+nav ul {
   display: flex;
   justify-content: space-evenly;
 }
@@ -43,7 +43,7 @@ img {
 }
 .inner-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .item {
   flex: 1;
@@ -163,6 +163,9 @@ ul li a {
     padding: 0 100px 0 100px;
     
   }
+  .about .inner-group {
+    flex-direction: row;
+  }
   main .about {
     padding: 0 10px 0 100px;
   }
@@ -210,6 +213,9 @@ max-height: 300px;
   .nav-links {
     font-size: 2rem;
   }
+  .main .item {
+    padding-right: 300px;
+  }
   .about-text {
     font-size: 2rem;
     padding: 200px 100px 100px 100px;
@@ -230,12 +236,12 @@ max-height: 300px;
     padding-left: 350px;
   }
   .contact h2 {
-    padding-right: 400px;
+    padding-right: 100px;
   }
   .contact h3 {
-    padding-right: 400px;
+    padding-right: 100px;
   }
   .contact ul {
-    padding-right: 400px;
+    padding-right: 100px;
   }
 }
