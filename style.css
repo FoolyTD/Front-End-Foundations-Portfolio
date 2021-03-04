@@ -69,6 +69,9 @@ img {
   text-align: left;
   padding: 10px 5px 5px 5px;
 }
+#projects-section {
+  margin: 0 15px 0 15px;
+}
 .project-group {
   display: flex;
   flex-direction:column;
@@ -110,6 +113,7 @@ ul li a {
   }
   .project-item {
     flex: 1;
+    padding-right: 15px;
     
   }
   img {
@@ -124,9 +128,6 @@ ul li a {
   }
   nav ol {
     justify-content: center;
-  }
-  .nav-links a{
-    padding: 0 45px;
   }
   main section .group {
     display: flex;
