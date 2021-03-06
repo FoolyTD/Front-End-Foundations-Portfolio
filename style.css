@@ -83,7 +83,7 @@ img {
   padding-left: 50px;
 }
 .form {
-  display: flex;
+  display: contents;
   justify-content: space-evenly;
   padding: 0 0 0 10px;
 }
@@ -144,6 +144,12 @@ ul li a {
   }
   .project-group {
     flex-direction: row;
+  }
+  .contact {
+    padding: 10px 20px 0 20px;
+  }
+  .contact .inner-group {
+    padding: 0 50px;
   }
 }
 
