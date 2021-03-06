@@ -37,6 +37,12 @@ section h2{
 img {
   width: 100%;
 }
+.introduction {
+  padding: 0 15px 0 15px;
+}
+.about {
+  padding: 0 15px 0 15px;
+}
 .group {
   display: flex;
   flex-direction: column;
@@ -82,6 +88,9 @@ img {
 .project-link {
   padding-left: 50px;
 }
+.contact {
+  padding: 0 15px 0 15px;
+}
 .form {
   display: contents;
   justify-content: space-evenly;
@@ -104,6 +113,15 @@ ul li a {
 @media all and (min-width: 600px) {
   main {
     display: flex;
+  }
+  .introduction {
+    padding: 0 50px 0 50px;
+  }
+  .about {
+    padding: 0 50px 0 50px;
+  }
+  .featured {
+    padding: 0 50px 0 50px;
   }
   .introduction .item {
     padding-left: 50px;
@@ -146,7 +164,7 @@ ul li a {
     flex-direction: row;
   }
   .contact {
-    padding: 10px 20px 0 20px;
+    padding: 0 50px 0 50px;
   }
   .contact .inner-group {
     padding: 0 50px;
