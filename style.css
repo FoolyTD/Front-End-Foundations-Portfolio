@@ -241,6 +241,15 @@ max-height: 300px;
   .project-link {
     padding-left: 250px;
   }
+  .form .group {
+    max-width: 100%;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  .form .group {
+    max-width: 85%;
+  }
 }
 
 @media all and (min-width: 1500px) {
