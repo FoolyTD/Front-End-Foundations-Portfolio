@@ -91,9 +91,11 @@ img {
 .contact {
   padding: 0 15px 0 15px;
 }
+.form .item {
+  display:contents;
+}
 .form {
   display: contents;
-  justify-content: space-evenly;
   padding: 0 0 0 10px;
 }
 
@@ -168,6 +170,10 @@ ul li a {
   }
   .contact .inner-group {
     padding: 0 50px;
+  }
+  .form .group {
+    display: grid;
+
   }
 }
 
